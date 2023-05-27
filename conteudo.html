@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Linux</title>
+    <link rel="stylesheet" href="conteudo.css">
+    <script src="/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <section class="container">
+        <nav class="lateral">
+                <ul>
+                        <li><a id="inicioBtn" href="#" class="titulos__maiores">Início</a></li>
+                        <li><a href="#" class="titulos__menores">Sobre o Linux</a></li>
+                        <li><a href="#" class="titulos__menores">Instalação</a></li>
+                        <li><a href="#" class="titulos__menores">Máquinas Virtuais</a></li>
+                        <hr>
+                        <li><a id="conceitosBtn" href="#" class="titulos__maiores">Conceitos Básicos</a></li>
+                        <li><a href="#conceitosBasicos" class="titulos__menores">Distros</a></li>
+                        <li><a href="#principaisTermos" class="titulos__menores">Principais termos</a></li>
+                        <li><a href="#estruturaDeDiretorios" class="titulos__menores">Estrutura de diretórios</a></li>
+                        <hr>
+                        <li><a id="terminalBtn" href="#terminal" class="titulos__maiores">O Terminal</a></li>
+                        <li><a href="#entendendoOTerminal" class="titulos__menores">Entendendo o Terminal</a></li>
+                        <li><a href="#principaisComandos" class="titulos__menores">Principais Comandos</a></li>
+                        <li><a href="#sudo" class="titulos__menores">Sudo</a></li>
+                        <hr>
+                        <li><a id="userBtn" href="#userAdm" class="titulos__maiores">Administração de Usuários</a></li>
+                        <li><a href="#gerenciamentoDeUsuarios" class="titulos__menores">Gerenciamento de Usuários</a></li>
+                        <li><a href="#sistemaDePermissoes" class="titulos__menores">Sistema de Permissões</a></li>
+                        <li><a href="#criacaoEModificacao" class="titulos__menores">Criação e Modificação de Usuários e Grupos</a></li>
+                        <hr>
+                        <li><a id="ideBtn" href="#conteudoIde" class="titulos__maiores">Ambiente de Desenvolvimento</a></li>
+                        <li><a href="#configurandoOAmbiente" class="titulos__menores">Configurando o ambiente</a></li>
+                        <li><a href="#ides" class="titulos__menores">IDEs</a></li>
+                        <li><a href="#sistemasDeArquivos" class="titulos__menores">Sistemas de Arquivos</a></li>
+                        <li><a id="serverBtn" href="#linuxServer" class="titulos__maiores">Linux como um Servidor</a></li>
+                        <li><a href="#instalacoesNecessarias" class="titulos__menores">Instalações Necessárias</a></li>
+                        <li><a href="#criacaoDoSite" class="titulos__menores">Criação do Site</a></li>
+                        <li><a href="#configuracao" class="titulos__menores">Configuração</a></li>
+                </ul>
+        </nav> 
+        <section class="conteudo">
+            <h2 class="tituloConteudo">Início</h2>
+               <br>
+            <hr class="hrConteudo">
+               <br>
+
+            <h1 id="sobreLinux" class="subtitulo">Sobre o Linux</h1>
+               <br>
+            <p class="conteudoBruto">O Linux é um sistema operacional, sendo disponibilizado seu código fonte para que qualquer usuário possa utilizá-lo de acordo com sua preferência, seja para estudar, utilizar, modificar, desde que distribua a sua contribuição para que outros usuários possam utilizar do mesmo sistema.<br><br>
+            Por ser um SO de código aberto, o Linux possui diversas versões diferentes chamadas popularmente de <em>distros</em> ou <em>flavours</em>, sendo os mais famosos o Ubuntu, Linux Mint, Debian, Fedora Linux, porém pode ser escolhida dependendo a preferência do usuário. Portanto, o sistema operacional Linux é uma opção atraente para aqueles que buscam algo flexível, seguro e com uma comunidade ativa de desenvolvedores e usuários. </p>
+                <br>
+                <br>
+            <h1 class="subtitulo" id="">Instalação</h1>
+                <br>
+            <p class="conteudoBruto">Para podermos entender melhor como fazer a instalação, iremos utilizar como referência o Ubuntu já que a maioria dos usuários quando iniciam pelo sistema operacional, optam por utilizá-lo. <br><br>
+            O primeiro passo é definir a versão do Linux que iremos realizar o download. Como dito anteriormente, neste caso a instalação será do Ubuntu. Sabendo disso, basta entrar no site oficial do <a href="https://ubuntu.com/download" target="_blank" >Ubuntu</a>.<br><br>
+            Após do download do arquivo temos 3 opções: substituir o SO atual com o Ubuntu, fazendo com que o único SO no computador seja o próprio Ubuntu (boot), instalar o Ubuntu junto com outro SO, dando opção para o usuário sobre qual escolher, porém, após escolher, se o usuário quiser trocar de SO ele terá que reiniciar a máquina (processo é chamado de <em>dual-boot</em>). E por fim podemos utilizar uma máquina virtual para simular um ambiente Ubuntu, podendo utilizar o Ubuntu dentro de outro SO e até realizar uma comunicação entre os dois.</p>
+                <br>
+                <br>
+            <h1 class="subtitulo">Máquinas Virtuais</h1>
+            <br>
+            <p class="conteudoBruto">Como dito anteriormente, as máquinas virtuais são alternativas práticas para quem quer aprender a utilizar o Ubuntu mas está receoso de instalar diretamente no computador ou de trocar de SO. <br><br>
+            Uma máquina virtual nada mais é do que um emulador de sistemas operacionais, o que faz com que você consiga ter acesso (com desempenho reduzido) a outros tipos de SOs sem fazer o boot ou o dual-boot no seu sistema. <br><br>
+            O software de máquina virtual mais famoso e estável é o <a href="https://www.virtualbox.org" target="_blank">VirtualBox</a>. Sendo assim, instale o software (tutorial de instalação <a href="https://tecnoblog.net/responde/como-criar-uma-maquina-virtual-virtualbox/" target="_blank">aqui</a>) e a distribuição Linux que deseja emular, após isto basta configurar o VirtualBox e iniciar o SO virtualmente. </p>
+            <br><br>
+            <hr>
+            <br><br>
+            <h1 id="conceitosB" class="tituloConteudo">Conceitos Básicos</h1>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="conceitosBasicos">Distros</h1>
+            <br>
+            <p class="conteudoBruto">A palavra “Distros” deriva da palavra abreviada para a distribuição do Linux. Como havíamos comentado anteriormente esse sistema operacional possui variações que dependendo da necessidade do usuário, como o <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>, <a href="https://www.debian.org/index.pt.html" target="_blank">Debian</a> e <a href="https://fedoraproject.org/" target="_blank"> Fedora Linux</a>. Caso queira se aprofundar mais basta clicar logo acima dos nomes das distros que você será levado para o site oficial explicando como funciona, aplicações e como instalar.</p>
+            <br><br>
+            <h1 class="subtitulo" id="principaisTermos">Principais Termos</h1>
+            <br>
+            <p class="conteudoBruto">Dentro do sistema Ubuntu, podemos utilizar inúmeros termos para a facilitação e rapidez do usuário para com o sistema, sendo os principais:</p>
+            <br>
+            <ul class="listaConteudoBruto">
+                <li><b>Terminal</b>: O Terminal é uma interface de linha de comando no Ubuntu, onde você pode digitar comandos para interagir com o sistema operacional e executar tarefas.</li>
+                <li><b>Unity</b>: Unity é a interface de usuário padrão anteriormente usada no Ubuntu. Era caracterizada por uma barra lateral (Launcher) à esquerda da tela e o Dash, um recurso de busca e lançamento de aplicativos.</li>
+                <li><b>Dash</b>: O Dash é uma funcionalidade do Ubuntu que permite pesquisar e lançar aplicativos, arquivos e configurações do sistema. É acessado pressionando a tecla Super (geralmente a tecla com o logotipo do Ubuntu) no teclado.</li>
+                <li><b>SO</b>: Sigla para Sistema Operacional.</li>
+                <li><b>Repositório</b>: O Ubuntu possui repositórios de software, que são coleções de aplicativos e pacotes disponíveis para instalação. Os repositórios contêm software oficialmente suportado pelo Ubuntu, que pode ser instalado usando o gerenciador de pacotes.</li>
+                <li><b>APT</b>: O Advanced Package Tool (APT) é o gerenciador de pacotes usado no Ubuntu. Ele facilita a instalação, atualização e remoção de software no sistema.</li>
+                <li><b>Software Center</b>: O Software Center (Centro de Software) é uma interface gráfica para buscar, instalar e gerenciar aplicativos no Ubuntu. É uma maneira fácil de encontrar e instalar software disponível nos repositórios.</li>
+                <li><b>Atualizações/Updates</b>: O Ubuntu fornece atualizações regulares de segurança, correções de bugs e melhorias de recursos. O Ubuntu Update Manager (Gerenciador de Atualizações) notifica quando há atualizações disponíveis para o sistema operacional e aplicativos instalados.</li>
+                <li><b>Live USB</b>: Um Live USB é um dispositivo de armazenamento USB que contém uma instalação de inicialização do Ubuntu. Você pode usar um Live USB para testar ou instalar o Ubuntu em um computador sem alterar o sistema operacional atual.</li>
+            </ul>
+            <br><br>
+            <h1 class="subtitulo" id="estruturaDeDiretorios">Estrutura de Diretórios</h1>
+            <br>
+            <p class="conteudoBruto">Os diretórios são pastas (ou contêineres) que armazenam e organizam a estrutura de arquivos de um sistema operacional essenciais para a sua eficiência de dados. Alguns dos principais diretórios mais comumente utilizados: <br><br>
+            <ul class="listaConteudoBruto">
+                <li><b>/</b>: É o diretório raíz, que é o ponto de partida para toda a estrutura de diretórios;</li>
+                <li><b>/bin</b>: Contém arquivos binários (executáveis) essenciais para o sistema operacional e para os usuários;</li>
+                <li><b>/etc</b>: Armazena arquivos de configuração do sistema e dos aplicativos instalados;</li>
+                <li><b>/home</b>: É o diretório dos usuários, onde cada usuário tem sua própria pasta pessoal para armazenar seus arquivos e configurações;</li>
+                <li><b>/tmp</b>: Diretório temporário usado para armazenar arquivos temporários durante a execução do sistema;</li>
+                <li><b>/usr</b>: Armazena a maioria dos arquivos e programas do sistema, incluindo bibliotecas, executáveis e documentação;</li>
+                <li><b>/var</b>: Contém dados variáveis do sistema, como arquivos de log, cache e spool (por exemplo, arquivos de impressão);</li>
+                <li><b>/dev</b>: Contém arquivos que representam dispositivos de hardware do sistema </li>
+                <li><b>/mnt</b>: Ponto de montagem para sistemas de arquivos temporários ou externos; </li>
+            </ul></p>
+            <br>
+            <br>
+            <hr>
+            <br><br>
+            <h1 id="terminal" class="tituloConteudo">O Terminal</h1>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="entendendoOTerminal">Entendendo o Terminal</h1>
+            <br>
+            <p class="conteudoBruto">Nada adianta saber os comandos e não saber onde utilizá-los, por isso deixamos essa parte para o aprendermos a usar no terminal do sistema Ubuntu. Para acessarmos podemos ir com o ponteiro do mouse na área de trabalho e apertar o botão direito, escolhendo a última opção chamada “Terminal”.<br><br>
+            Ao clicar abrirá uma janela e nela estará aparecendo uma tela de boas-vindas com uma linha de texto, conhecida como prompt onde geralmente é composto pelo nome do usuário atual, seguido do cifrão ($), logo ao final da tela indicando que está logado como um usuário. Exemplo do que apareceria: <br><br> <img src="/imgs/terminalWelcome.jpeg" alt="Imagem do Terminal"> </p>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="principaisComandos">Principais Comandos</h1>
+            <br>
+            <p class="conteudoBruto">Dentro do Terminal, podemos utilizar algumas ferramentas que podem auxiliar caso não possua um mouse ou precise acessar mais a fundo as operações. Iremos citar os principais comandos para que fique aqui como uma forma de conhecimento, porém existem incontáveis comandos para as mais diversas operações então recomendamos uma pesquisa especificamente sobre os comandos. <br><br>
+            <ul class="listaConteudoBruto">
+                <li><strong>..</strong>: Volta a um diretório anterior;</li>
+                <li><strong>cd</strong>: Muda para um diretório específico. Por exemplo, "cd /home" o levará para o diretório "/home";</li>
+                <li><strong>pwd</strong>: Exibe o diretório atual em que você está localizado;</li>
+                <li><strong>mkdir</strong>: Cria um novo diretório. Por exemplo, "mkdir documentos" criará um diretório chamado "documentos";</li>
+                <li><strong>rdmir</strong>: Remove um diretório vazio. Por exemplo, "rmdir documentos" removerá o diretório "documentos";</li>
+                <li><strong>cp</strong>: Copia arquivos ou diretórios. Por exemplo, "cp arquivo.txt /home/usuário" copiará o arquivo "arquivo.txt" para o diretório "/home/usuário";</li>
+                <li><strong>mv</strong>Move ou renomeia arquivos ou diretórios. Por exemplo, "mv arquivo.txt /home/usuário" moverá o arquivo "arquivo.txt" para o diretório "/home/usuário";</li>
+                <li><strong>ls</strong>: Lista os arquivos e diretórios em um determinado diretório;</li>
+                <li><strong>chmod</strong>: Altera as permissões de um arquivo ou diretório. Por exemplo, "chmod + script.sh" concederá permissão de execução ao arquivo "script.sh";</li>
+            </ul> </p>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="sudo">Sudo</h1>
+            <br>
+            <p class="conteudoBruto">O comando “sudo” é a abreviação de “Super User Do”, onde ele permite que o usuário possa acessar diretórios que um usuário não administrativo não consegue acessar. Porém temos que ter cuidado com o que iremos utilizar com esse comando, pois qualquer erro ou comando incorreto pode haver consequências significativas no sistema operacional. <br><br>
+            Segue um exemplo de comando que serve para verificar os arquivos de atualização do seu Linux, comando este que necessita de permissões administrativas para ser utilizado: <br><br>
+            <img src="/imgs/terminalSudo.jpeg" alt="Imagem do Terminal"> </p>
+            <br>
+            <br>
+            <hr>
+            <br><br>
+            <h1 id="userAdm" class="tituloConteudo">Administração de Usuários</h1>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="gerenciamentoDeUsuarios">Gerenciamento de Usuários</h1>
+            <br>
+            <p class="conteudoBruto">
+                <ul class="listaConteudoBruto">
+                    <li><b>Super Usuário ou Administrador</b>: Este tipo de usuário é chamado de root. É o responsável por controlar todo o sistema e não possui qualquer tipo de restrição.<br>Sempre que for executado algum software ou atividade que precise das permissões de administrador, você terá que ser reconhecido como o usuário root, chamado a partir do comando sudo;</li>
+                    <br>
+                    <li><b>Usuários do Sistema</b>: São usuários que não precisam estar logados no sistema para controlar algumas atividades;</li>
+                    <br>
+                    <li><b>Usuários Comuns</b>: Usuários que possuem contas criadas para utilizar o sistema operacional. Podem executar tarefas básicas, com exceção de tarefas a nível de sistema, ou seja, que necessitam de permissão;</li>
+                </ul>
+            </p>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="sistemaDePermissoes">Sistema de Permissões</h1>
+            <br>
+            <p class="conteudoBruto">
+                Existem 3 tipos de permissão, sendo elas:<br>
+                <ul class="listaConteudoBruto">
+                    <li><b>r</b>: Permissão de Leitura (read). Permite vizualizar o conteúdo de um arquivo ou diretório;</li>
+                    <li><b>w</b>: Permissão de Escrita (write). Permite alterar o conteúdo de um arquivo ou diretório</li>
+                    <li><b>x</b>: Permissão de Execução (execute). Permite executar o arquivo.</li>
+                </ul>
+                <br><br>
+                É possível ver o sistema de permissão de arquivos utilizando o comando ls -l, listando dessa forma todos os arquivos no formato de lista e informando as características do arquivo/diretório. <br><br>
+                <img src="/imgs/permissoes.png" alt="Imagem do Terminal listado ls -l"> <br><br>
+                Podemos perceber na imagem que existem 10 espaços para caracteres no início da linha. Esses 10 espaços servem para identificar o tipo de arquivo (primeiro caractere) e identificar as permissões de cada tipo de usuário, sendo que cada usuário tem 3 opções de permissão e existem 3 tipos de usuário, totalizando 9 caracteres de permissão e um de identificação. <br><br>
+                Os caracteres utilizados para identificar as permissões são os citados anteriormente, o <em>r</em>, <em>w</em> e o <em>x</em>, cada um representando a sua respectiva permissão. Na ausência de uma permissão o terminal irá mostrar um "-" no lugar do caractere, indicando que o usuário correspondente não possui este tipo de permissão. <br><br>
+                Para entender melhor, precisamos saber quais são os tipos de usuários:<br>
+                <ul class="listaConteudoBruto">
+                    <li><b>Usuário Dono (u)</b>: é usuário criador do arquivo. Geralmente tem todas as permissões;</li>
+                    <li><b>Usuário Grupo (g)</b>: é o usuário que faz parte do mesmo grupo que o arquivo pertence. Geralmente podem ler e executar, mas não alterar;</li>
+                    <li><b>Usuário Outro (o)</b>: é o usuário que não é nem dono e nem faz parte do mesmo grupo do arquivo. Geralmente tem permissão apenas de leitura;</li>
+                </ul> <br><br>
+                Sabendo disso, podemos então separar os 9 caracteres por grupo, sendo que: <br>
+                <ul class="listaConteudoBruto">
+                    <li>Os 3 primeiros caracteres se referem ao usuário <b>Dono</b>;</li>
+                    <li>Os 3 caracteres do meio se referem ao usuário <b>Grupo</b>;</li>
+                    <li>Os 3 últimos caracteres se referem ao usuário <b>Outro</b>.</li>
+                </ul><br>
+                <img src="/imgs/usertype.png" alt="Imagem Permissões de User">
+            </p>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="criacaoEModificacao">Criação e Modificação de Usuários e Grupos</h1>
+            <br>
+            <p class="conteudoBruto">O sistema de permissões pode ser modificado ao você alterar os parâmetros de usuários e grupos, inserindo usuários em grupos e criando novos grupos. Isto pode ser feito apenas com permissão de usuário root, portanto é bom prosseguir com cautela. <br><br>
+            Os comandos principais utilizados para alterar são os comandos <em>adduser</em>,<em> usermod</em>, <em>groupadd</em>, e <em>chmod</em>
+            </p>
+            <br>
+            <br>
+            <hr>
+            <br><br>
+            <h1 id="conteudoIde" class="tituloConteudo">Ambiente de Desenvolvimento</h1>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="configurandoOAmbiente">Configurando o Ambiente</h1>
+            <br>
+            <p class="conteudoBruto">O primeiro passo para você começar o seu ambiente de desenvolvimento é instalando os softwares e pacotes que você irá utilizar para o objetivo de desenvolvimento que você tem. Isto vai desde sistemas operacionais, IDEs e até bibliotecas ou fontes estilizadas que você possa usar. Tendo isto em mãos, podemos então ir para o próximo passo que é decidir que IDE vamos usar baseado no que demanda o projeto. </p>
+            <br><br>
+            <h1 class="subtitulo" id="ides">IDEs</h1>
+            <br>
+            <p class="conteudoBruto">Uma IDE, do inglês Integrated Development Environment (Ambiente Integrado de Desenvolvimento) nada mais é do que uma ferramenta que você irá utilizar para se comunicar com o seu computador e dar instruções via algoritmos, e isto pode ser ser feito com códigos de certas linguagens ou comunicação via terminal. <br><br>
+            Temos diversos exemplos de IDEs famosas que cumprem suas propostas. Normalmente uma IDE cobre diversas linguagens de programação/estilização em um só lugar, mas também temos IDEs específicas para cada tipo de linguagem. Por exemplo: para aplicações web, design de software desktop/mobile e manutenção/criação de servidores nós podemos usar o <em>Visual Studio Code</em> da Microsoft, que suporta diversas linguagem com as mais diversas aplicações. Por outro lado, você pode estar com um projeto de automação de emails via Python, então a IDE recomendada seria o <em>PyCharm</em>, que é especializada em lidar com Python e fornece diversos tipos de bibliotecas. Além destes exemplos temos o <em>Eclipse</em> que é similar ao VSCode, o <em>Dev C++</em> que é integrado a um compilador das linguagens C e C ++ e diversos outros exemplos que vão depender do que você quer fazer.</p>
+            <br><br>
+            <h1 class="subtitulo" id="sistemasDeArquivos">Sistemas de Arquivos</h1>
+            <br>
+            <p class="conteudoBruto">Os sistemas de arquivos são a forma com que os sistemas operacionais vão organizar e armazenar os diferentes tipos de dados e arquivos no computador. Eles regem como os dados devem ser nomeados, organizados, a alocação de espaço no disco e também garantem a segurança dos dados. <br><br>
+            Cada sistema operacional utiliza um tipo de sistema, e cada tipo se difere no quesito configuração e propriedades. Sendo assim, temos 4 principais sistemas de arquivos: <em>NFTS</em>, <em>Fat32</em>, <em>Ext3</em> e <em>ReiserFS</em>, onde o NFTS e o Fat32 são nativos do Windows e o Ext3 e o ReiserFS são nativos do Linux. Cada um com diferentes capacidades e organização. 
+            </p>
+            <br><br>
+            <br><br>
+            <hr>
+            <br><br>
+            <h1 id="linuxServer" class="tituloConteudo">Linux como um Servidor</h1>
+            <br>
+            <br>
+            <h1 class="subtitulo" id="instalacoesNecessarias">Instalaçoes Necessárias</h1>
+            <br>
+            <p class="conteudoBruto">
+                Antes de você publicar o seu site na internet, você precisará de alguns softwares capazes de manter o site no ar pelo o tempo que você desejar. Estaremos falando apenas sobre deploy de sites via Linux por conta da facilidade e gratuidade do processo. <br><br>
+                Você deve instalar os seguintes softwares: <br>
+                <ul class="listaConteudoBruto">
+                    <li>Uma distribuição do Linux adequada para o seu servidor;</li>
+                    <li>Um servidor web para hospedar os arquivos do seu site (Apache ou Nginx);</li>
+                    <li>Um banco de dados, caso o seu servidor exigir armazenamento e recuperação de dados;</li>
+                    <li>Um servidor DNS para mapear nomes de domínio em endereço IP (BIND);</li>
+                    <li>Por fim, um firewall para proteger o seu servidor de arquivos ou usuários maliciosos.</li>
+                </ul>
+            </p>
+            <br><br>
+            <h1 class="subtitulo" id="criacaoDoSite">Criação do Site</h1>
+            <br>
+            <p class="conteudoBruto">
+                A criação do corpo do site fica a critério do usuário e os seus objetivos. Normalmente são utilizadas tecnologias como a linguagem de hipertexto HTML5 ou XML para a definição e separação de conteúdo da página, o CSS3 para a estilização do site e o JavaScript para lidar tanto com a interatividade do site quanto a parte server-side. Também temos linguagens mais incomuns para lidar com problemas mais específicos como o PHP para lidar com banco de dados e bibliotecas como o React Native para lidar com desenvolvimento mobile. Com isto, o seu site deverá ser guardado dentro de um diretório com todos os arquivos utilizados.
+            </p>
+            <br><br>
+            <h1 class="subtitulo" id="configuracao">Configuração</h1>
+            <br>
+            <p class="conteudoBruto">
+                A configuração do seu sistema para o deploy de um site é muito específica, qualquer erro no processo pode levar a um deploy inseguro ou diferente da maneira esperada. Sendo assim, recomendamos que você pesquise a documentação correta para realizar este processo, porém, vamos fornecer de forma resumida um passo-a-passo de como fazer o deploy. <br><br>
+                <ul class="listaConteudoBruto">
+                    <li>Primeiro configure o servidor web instalado previamente, seja ele o Apache ou o Nginx, cada um tem um processo diferente;</li>
+                    <li>Crie um diretório para hospedar os arquivos do seu site;</li>
+                    <li>Mova os arquivos do site no diretório do servidor utilizando um método de trasnferência adequado como o FTP ou o SCP;</li>
+                    <li>Configure as permissões do seu arquivo para fazer com que o servidor tenha acesso a eles;</li>
+                    <li>Após fazer todas as alterações que ver necessário, reinicie o servidor para que todas as alterações sejam salvas;</li>
+                    <li>Por fim, teste o seu site acessando o endereço do seu servidor no navegador e verificar se está tudo funcionando corretamente.</li>
+                </ul>
+            </p>
+            <br><br>
+
+            <a href="/index.html">Voltar para a página principal.</a>
+
+
+
+        </section>     
+    </section>
+</body>
+</html>

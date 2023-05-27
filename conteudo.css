@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-sedundario: #00000000;
+}
+
+@font-face {
+    font-family: Glitch Goblin;
+    src: url(C:\Users\Gerencial\Downloads\GlitchGoblin-2O87v);
+}
+
+
+
+.container{
+    background-color:rgb(188, 187, 187);
+    font-family:'JetBrains Mono', monospace;
+    display: flex;
+}
+
+nav{
+    max-width: 224px;
+    width: 100%;
+    background-color:#FFFFFF;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a{
+    background-color:black;
+    color: black;
+    padding: 5px;
+    display: block;
+    background-color:#FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 0;
+    
+}
+
+nav ul li a:hover {
+    background-color:darkgrey;
+}
+
+ul hr{
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 5px;
+    
+}
+
+.titulos__maiores{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.titulos__menores{
+    font-size: 16px;
+}
+
+.conteudo{
+    padding: 16px;
+    margin-left: 225px;
+}
+
+.tituloConteudo{
+    font-size: 30px;
+}
+
+.subtitulo{
+    font-size: 25px;
+}
+
+.hrConteudo{
+    width: 1400px;
+}
+
+.conteudoBruto{
+    width: 80vw;
+}
+
+.listaConteudoBruto{
+    padding-left: 32px;
+}
